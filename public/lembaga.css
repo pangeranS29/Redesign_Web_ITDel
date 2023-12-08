@@ -1,0 +1,258 @@
+.body{
+  font-family: Montserrat;
+}
+
+.box-container {
+    position: relative;
+    margin-bottom: 150px; /* Menambahkan jarak antara box-container dan container-fasilitas */
+  }
+  .box {
+    background-color: black;
+    color: white;
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+  }
+  .banner {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  .box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .box p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.keahlian {
+    text-align: left;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    grid-column: span 1; /* Setiap elemen mengambil satu kolom */
+    display: flex;
+    flex-direction: column; /* Menetapkan tata letak kolom */
+    align-items: center; /* Pusatkan elemen ke tengah */
+  
+}
+
+.keahlian:hover {
+    transform: scale(1.05);
+}
+
+.keahlian img {
+    max-width: 100%;
+    max-height: 200px; /* Atur tinggi maksimum gambar */
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+
+}
+
+.keahlian h3 {
+    font-size: 1.5em;
+    color: #009688; /* Warna judul keahlian */
+}
+
+.keahlian p {
+    color: #666; /* Warna teks paragraf */
+    line-height: 1.5;
+}
+
+/* Menambahkan gaya untuk menampilkan 2 kolom di setiap baris */
+@media(min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+  
+
+/* The footer is fixed to the bottom of the page */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-height: 800px) {
+  footer {
+    position: static;
+  }
+  header {
+    padding-top: 40px;
+  }
+}
+
+.footer-distributed {
+  background-color:   #3E8DA8;
+;
+  box-sizing: border-box;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: #e0ac1c;
+}
+
+/* Footer links */
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #e0ac1c;
+  text-decoration: none;
+}
+
+/* Footer Right */
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+  background-color: #3f71ea;
+}
+
+.footer-links a:hover {
+  color: #3f71ea;
+}
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+

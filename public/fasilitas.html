@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>fasilitas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="fasilitas.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+
+
+<script>
+  // Menambahkan event listener pada semua item dropdown
+var dropdownItems = document.querySelectorAll('.nav-link');
+dropdownItems.forEach(function(item) {
+  item.addEventListener('click', function(event) {
+    // Mencegah perilaku default dari link
+    event.preventDefault();
+    
+    // Mendapatkan URL tujuan dari atribut href
+    var targetUrl = this.getAttribute('href');
+    
+    // Pindah halaman ke URL tujuan
+    window.location.href = targetUrl;
+  });
+});
+</script>
+
+<style>
+
+.navbar-nav .nav-link {
+  color: white;
+}
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    background-color: #3E8DA8;
+    border-color: #3E8DA8;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .navbar-collapse {
+    background-color: #3E8DA8;
+  }
+  .navbar-nav .nav-link {
+    color: #fff !important;
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+</style>
+
+
+<div class="box-container">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #3E8DA8; padding: 0; position: fixed; width: 100%; z-index: 1;">
+    <div class="container-fluid" style="background-color: #3E8DA8; height: 100%;">
+      <a class="navbar-brand" href="#">
+        <img src="img/logodel.png" alt="Logo" height="50">
+        <span class="navbar-text" style="color: #fff;">Institut Teknologi Del</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 160px;">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="beranda.html" >BERANDA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pengumuman.html">PENGUMUMAN</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="programpendidikan.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PROGRAM PENDIDIKAN
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Fakultas Informatika & Teknik Elektro</a></li>
+              <li><a class="dropdown-item" href="#">Fakultas Vokasi</a></li>
+              <li><a class="dropdown-item" href="#">Fakultas BioTeknologi</a></li>
+              <li><a class="dropdown-item" href="#">Fakultas Teknologi Industri</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="fasilitas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: yellow;">
+              FASILITAS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Laboratorium & Kelas</a></li>
+              <li><a class="dropdown-item" href="#">Kantin</a></li>
+              <li><a class="dropdown-item" href="#">Perpustakaan</a></li>
+              <li><a class="dropdown-item" href="#">Klinik</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="lembaga.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              LEMBAGA
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Mitra Kerjasam Dengan IT DEL</a></li>
+              <li><a class="dropdown-item" href="#">Koperasi</a></li>
+              <li><a class="dropdown-item" href="#">Pusat Bahasa Del</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav> 
+  <br>
+  <br>
+    <img src="img/gambar2.jpg" class="banner" alt="Banner">
+    <div class="box">
+      <h2>FASILITAS</h2>
+      <p>
+        Institut Teknologi Del (IT DEL) memiliki fasilitas untuk mendukung mahasiswa. Kampus ini dilengkapi dengan laboratorium, kelas, kantin, asrama, klinik, dan perpustakaan. Selain itu, tersedia fasilitas hiburan dan olahraga untuk menunjang kegiatan sosial mahasiswa.
+      </p>
+    </div>
+  </div>
+
+
+
+  <div class="container-fasilitas">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="img/laboratorium.jpg" alt="" style="object-fit: cover; width: 100;">
+      </div>
+      <div class="col-md-6">
+        <h2 >Laboratorium & Kelas</h2>  
+        <p>Lab Desprin ini dilengkapi dengan perangkat keras utama teknologi 3D printer sebagai salah satu bagian teknologi dari additive manufacturing yang mulai berkembang sejak 3-5 tahun lalu. Laboratorium juga sudah di dukung dengan perangkat lunak Computer Aided Design (CAD) Solid Works.
+            Singkatnya, dengan adanya teknologi ini, industri bisa menghemat biaya karena proses revisi produksi bisa dilakukan secara lebih cepat tanpa harus melakukan produksi ulang, hemat material juga tenaga kerja.
+        </p>
+      </div>
+
+      
+      <div class="col-md-6">
+        <img src="img/Perpustakaan.jpg" alt="">
+      </div>
+      <div class="col-md-6">
+        <h2>Perpustakaan</h2>  
+        <p>
+            Perpustakaan Politeknik Informatika Del (PI Del) berdiri sejak tanggal 9 Januari 2002 dengan sistem pelayanan  open acces (terbuka). Selanjutnya berubah nama seiring dengan berubahnya status Politeknik menjadi Institut sejak tahun 2013. Perpustakaan berganti nama menjadi Perpustakaan Institut Teknologi Del. Perpustakaan Institut Teknologi Del memiliki fungsi utama yaitu fungsi pendidikan. Pengadaan koleksi dan pengembangan minat baca internal dan eksternal Institut Teknologi Del dilakukan sebagai bagian dari kegiatan diseminasi kegiatan peningkatan  minat baca.</p>
+      </div>
+
+      <div class="col-md-6">
+        <img src="img/rumahDosen.jpg" alt="">
+      </div>
+      <div class="col-md-6">
+        <h1>Akomodasi</h1> 
+        <h2 style="font-size: 25px;">Rumah Dosen</h2>  
+        <p>Institut Teknologi Del (IT Del) menyediakan fasilitas perumahan untuk dosen dan staf penunjang di lingkungan kampus. Dengan tinggal di lingkungan kampus, seluruh dosen dan staf bisa memberikan kontribusi terbaik untuk kelancaran dan kualitas proses akademis dan non-akademis di IT Del. Dengan lingkungan dan fasilitas yang ergonomis, diharapkan juga dosen bisa mengembangkan diri secara lebih maksimal. Beberapa tipe perumahan yang tersedia untuk dosen dan staf</p>
+      </div>
+      <div class="col-md-6">
+        <img src="img/asrama.jpg" alt="">
+      </div>
+      <div class="col-md-6">
+        <h2 style="font-size: 25px;">Asrama Mahasiswa</h2>  
+        <p>Seluruh mahasiswa IT Del diwajibkan tinggal di asrama yang disediakan. Hal ini untuk mendukung sistem pendidikan vokasi dimana mahasiswa akan melaksanakan kegiatan akademis terjadwal sampai sore hari ditambah kegiatan mandiri hingga pukul 10 malam hari. Dengan tinggal di asrama yang lokasinya berada di dalam lingkungan kampus, mahasiswa dapat segera beristirahat setelah melaksanakan kegiatan terjadwal di kampus. Dengan beristirahat yang cukup dan baik diharapkan performansi mahasiswa dalam setiap kegiatan di dalam kampus akan maksimal. Untuk mendukung kualitas hidup berasrama, mahasiswa akan diawasi oleh Bapak/Ibu asrama dibantu oleh Kakak/Abang asrama. Dengan peraturan asrama yang diberlakukan, mahasiswa akan hidup lebih disiplin dan berbudaya.</p>
+      </div>
+
+
+      <div class="col-md-6">
+        <img src="img/kantin.jpg" alt="">
+      </div>
+      <div class="col-md-6">
+        <h2>Kantin</h2>  
+        <p>
+            IT Del menyediakan menu makanan yang bergizi dan sehat untuk semua mahasiswa/i. Menu yang disediakan selalu memenuhi standard gizi, sehingga mahasiswa bisa melaksanakan aktifitas perkuliahan dengan sehat dan prima. Setiap mahasiswa diwajibkan untuk makan di kantin tiga kali setiap harinya.</p>
+      </div>
+
+      <div class="col-md-6">
+        <img src="img/lapangan.jpg" alt="">
+      </div>
+        <div class="col-md-6">
+            <h2>Hiburan dan Olahraga</h2>  
+            <p>Sarana Olahraga
+    Kampus IT Del memiliki fasilitas untuk olahraga sebagai berikut:Bola basket,Futsal,Bola voli,Badminton,Tenis Meja,Jogging.</p>
+
+    <p> Hiburan
+
+    IT Del memiliki beberapa sarana hiburan yang dapat digunakan dosen, staf dan mahasiswa IT Del, antara lain:
+    Meja Bilyard ,Televisi (di Entrance Hall dan kantin),Alat music (drum, gitar, organ, keyboard, gondang)
+    </p>
+    </div>
+
+
+    <div class="col-md-6">
+        <img src="img/klinik.jpg" alt="" style="object-fit: cover; width: 100;">
+      </div>
+      <div class="col-md-6">
+        <h2>Klinik</h2>  
+        <p>Praktek umum dokter Del resmi didirikan pada bulan Mei tahun 2009, terletak disamping pintu masuk ke area kampus Institut Teknologi Del. Tujuan didirikan praktek umum ini yang terutama adalah untuk melayani siswa, mahasiswa, pegawai Del tetapi selain itu juga untuk melayani masyarakat disekitar lingkungan kampus. Praktek umum ini bersifat sosial, non-profit, tetapi juga tetap berusaha menjaga mutu pelayanan agar sesuai dengan standar pelayanan termutakhir. Praktek umum ini juga bekerja sama dengan Jamsostek sebagai PPK I untuk melayani pasien-pasien yang terdaftar sebagai tanggungan Jamsostek dalam wilayah ini. Praktek umum ini bisa melayani pengobatan dasar (meliputi anak dan dewasa) hingga yang membutuhkan tindakan bedah sederhana. Di dalam praktek umum ini juga sudah tersedia obat sehingga tidak perlu membeli obat lagi di tempat lain. Saat ini praktek umum ini sedang dalam proses pengembangan menjadi klinik Yayasan Del.
+        </p>
+      </div>
+        
+
+
+
+</div>
+</div>
+
+
+
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+    <br>
+     <center><img src="img/logo.del.jpg" style="max-width: 100%; max-height: 200px; object-fit: cover;"></center> 
+    
+  </div>
+
+  <div class="footer-center">
+      <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Lokasi</span>
+             Laguboti</p>
+      </div>
+
+      <div>
+          <i class="fa fa-phone"></i>
+          <p><span>Telp</span>
+            +62 632 331234</p>
+      </div>
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><span>Email</span>
+            <a href=" info@del.ac.id"> info@del.ac.id</a></p>
+      </div>
+  </div>
+  <div class="footer-right">
+      <p class="footer-company-about">
+          <span>About </span>
+          <strong> Institut Teknologi Del</strong>
+          Jl. Sisingamangaraja, Sitoluama
+          Laguboti, Toba Samosir
+          Sumatera Utara, Indonesia
+          Kode Pos: 22381
+      </p>
+      <div class="footer-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+    
+</body>
+</html>

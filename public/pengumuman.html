@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Institut Teknologi Del </title>
+    <link rel="stylesheet" href="pengumuman.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    ">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var banner = document.querySelector(".banner");
+        var nav = document.querySelector("nav");
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > banner.clientHeight) {
+            nav.classList.add("navbar-scrolled");
+          } else {
+            nav.classList.remove("navbar-scrolled");
+          }
+        });
+      });
+    </script>
+   </head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #3E8DA8; padding: 0; position: fixed;">
+    <div class="container-fluid" style="background-color: #3E8DA8; height: 100%;">
+      <a class="navbar-brand" href="#">
+        <img src="img/logodel.png" alt="Logo" height="50">
+        <span class="navbar-text" style="color: #fff;">Institut Teknologi Del</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 160px;">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="beranda.html">BERANDA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pengumuman.html" style="color: yellow;">PENGUMUMAN</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="programpendidikan.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PROGRAM PENDIDIKAN
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Fakultas Informatika & Teknik Elektro</a></li>
+              <li><a class="dropdown-item" href="#">Fakultas Vokasi</a></li>
+              <li><a class="dropdown-item" href="#">Fakultas BioTeknologi</a></li>
+              <li><a class="dropdown-item" href="#">Fakultas Teknologi Industri</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="fasilitas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              FASILITAS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Laboratorium & Kelas</a></li>
+              <li><a class="dropdown-item" href="#">Kantin</a></li>
+              <li><a class="dropdown-item" href="#">Perpustakaan</a></li>
+              <li><a class="dropdown-item" href="#">Klinik</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="lembaga.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              LEMBAGA
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Mitra Kerjasam Dengan IT DEL</a></li>
+              <li><a class="dropdown-item" href="#">Koperasi</a></li>
+              <li><a class="dropdown-item" href="#">Pusat Bahasa Del</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<script>
+  // Menambahkan event listener pada semua item dropdown
+var dropdownItems = document.querySelectorAll('.nav-link');
+dropdownItems.forEach(function(item) {
+  item.addEventListener('click', function(event) {
+    // Mencegah perilaku default dari link
+    event.preventDefault();
+    
+    // Mendapatkan URL tujuan dari atribut href
+    var targetUrl = this.getAttribute('href');
+    
+    // Pindah halaman ke URL tujuan
+    window.location.href = targetUrl;
+  });
+});
+</script>
+
+<style>
+
+.navbar-nav .nav-link {
+  color: white;
+}
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    background-color: #3E8DA8;
+    border-color: #3E8DA8;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .navbar-collapse {
+    background-color: #3E8DA8;
+  }
+  .navbar-nav .nav-link {
+    color: #fff !important;
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+</style>
+<div>
+<img src="img/gambar2.jpg" class="banner" alt="Banner">
+    <div class="box">
+      <h2>PENGUMUMAN</h2>
+      <p>
+        Halaman pengumuman ini menjadi pusat informasi yang terkini mengenai kegiatan kampus, pengumuman akademis, perubahan jadwal, pemberitahuan penting, serta berita dan acara-acara khusus yang melibatkan komunitas kampus IT Del.
+      </p>
+    </div>
+  </div>
+<div style="background-color: white; width: 100%; height: 64px;"></div><br>
+
+<div class="container">
+  <div class="row" style="display: flex; justify-content: space-evenly;">
+      
+    <h3 class="section-title" style="font-size: 30px;"><span>Pengumuman</span></h3>
+
+      <div class="card border-primary col-lg-4 col-md-6 col-sm-12 mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-transparent border-primary">25 September 2023 </div>
+        <div class="card-body text-primary">
+          <h2 class="card-title">Wisuda 398 Lulusan Institut Teknologi Del</h2>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+        </div>
+        <div class="card-footer bg-transparent border-primary"><a class="wd-button" href="" rel="">Selengkapnya <i class="fas fa-arrow-right"></i></a></div>
+      </div>
+
+      <div class="card border-primary col-lg-4 col-md-6 col-sm-12 mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-transparent border-primary">25 September 2023 </div>
+        <div class="card-body text-primary">
+          <h2 class="card-title">Pengukuhan 483 Mahasiswa IT Del Angkatan XXIII dan Dies Natalis ke XXII</h2>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+        </div>
+        <div class="card-footer bg-transparent border-primary"><a class="wd-button" href="" rel="">Selengkapnya <i class="fas fa-arrow-right"></i></a></div>
+      </div>
+
+      <div class="card border-primary col-lg-4 col-md-6 col-sm-12 mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-transparent border-primary">4 Juli 2023</div>
+        <div class="card-body text-primary">
+          <h2 class="card-title">Job Fair Institut Teknologi Del di Pekan Raya Sumatera Utara (PRSU) 2023</h2>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+        </div>
+        <div class="card-footer bg-transparent border-primary"><a class="wd-button" href="" rel="">Selengkapnya <i class="fas fa-arrow-right"></i></a></div>
+      </div>
+          
+      <div class="see-all-container">
+        <a class="see-all" href="pengumuman.html" rel="">Pengumuman Selengkapnya <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<div class="berita">
+  <h1>Berita Kampus & Update</h1>
+  <p>Menyajikan informasi Seputar IT DEL</p>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+        <div class="card">
+          <img src="img/berita1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">IT Del Menjadi Tuan Rumah 29th IEEE ICT Conference
+            </h5>
+            <p class="card-text">Institut Teknologi Del berperan sebagai host dalam International Conference on Telecommunications (ICT) untuk edisi yang ke-29. 
+              ICT merupakan konferensi yang berfokus pada kemajuan dan penelitian terkini dalam bidang telekomunikasi. Konferensi […]</p>
+              <br><br>
+            <a href="#" class="btn btn-primary">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+        <div class="card">
+          <img src="img/berita2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">399 Mahasiswa IT Del Mengikuti Retreat untuk Meningkatkan Karakter 3M (MarTuhan,Marroha,Marbisuk)</h5>
+            <p class="card-text">Sebagai bentuk untuk meningkatkan karakter Del yakni 3M (MarTuhan, Marroha, Marbisuk) mahasiswa IT Del 
+              angkatan 2021 sebanyak 399 orang melaksanakan retreat dan outbond. Kegiatan ini dilaksanakan dengan 2 gelombang yakni […].</p>
+              <br>
+            <a href="#" class="btn btn-primary">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+        <div class="card">
+          <img src="img/berita3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bapak Gibran Rakabuming Raka Beri Kuliah Umum kepada Mahasiswa IT Del terkait “Pemimpin Milenial”</h5>
+            <p class="card-text">Pada Hari Sabtu, 18 November 2023 Institut Teknologi Del menerima kunjungan Bapak Gibran Rakabuming Raka, 
+              sekaligus menjadi pembicara pada Kuliah Umum dengan topik “Pemimpin Milenial” kepada Mahasiswa/i Institut Teknologi Del. […]</p>
+            <a href="#" class="btn btn-primary">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+      <br>
+       <center><img src="img/logo.del.jpg" style="max-width: 100%; max-height: 200px; object-fit: cover;"></center> 
+      
+    </div>
+  
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Lokasi</span>
+               Laguboti</p>
+        </div>
+  
+        <div>
+            <i class="fa fa-phone"></i>
+            <p><span>Telp</span>
+              +62 632 331234</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><span>Email</span>
+              <a href=" info@del.ac.id"> info@del.ac.id</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About </span>
+            <strong> Institut Teknologi Del</strong>
+            Jl. Sisingamangaraja, Sitoluama
+            Laguboti, Toba Samosir
+            Sumatera Utara, Indonesia
+            Kode Pos: 22381
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+  "></script>
+  </body>
+</html>
